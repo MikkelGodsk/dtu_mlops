@@ -46,7 +46,7 @@ Below is seen the default code structure of cookie-cutter for data science proje
 </p>
 
 What is important to keep in mind when using a template such as cookie-cutter, is that it exactly is a template. By
-definition a template is *guide* to make something. Therefore, not all parts of an template may be important for your
+definition a template is *guide* to make something. Therefore, not all parts of a template may be important for your
 project at hand. Your job is to pick the parts from the template that is useful for organizing your data science.
 project.
 
