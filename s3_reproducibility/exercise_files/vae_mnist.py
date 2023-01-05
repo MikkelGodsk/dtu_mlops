@@ -53,9 +53,7 @@ def main(cfg):
 
     model = Model(Encoder=encoder, Decoder=decoder).to(DEVICE)
 
-    from torch.optim import Adam
-
-    BCE_loss = nn.BCELoss()
+from torch.optim import Adam
 
     def loss_function(x, x_hat, mean, log_var):
         reproduction_loss = nn.functional.binary_cross_entropy(
@@ -77,21 +75,15 @@ def main(cfg):
 
             optimizer.zero_grad()
 
-            x_hat, mean, log_var = model(x)
-            loss = loss_function(x, x_hat, mean, log_var)
-
-            overall_loss += loss.item()
-
-            loss.backward()
-            optimizer.step()
-        log.info(
-            "\tEpoch " +
-            str(epoch + 1) +
-            " complete!" +
-            "\tAverage Loss: " +
-            str(overall_loss / (batch_idx * batch_size)),
-        )
-    log.info("Finish!!")
+        x_hat, mean, log_var = model(x)
+        loss = loss_function(x, x_hat, mean, log_var)
+        
+        overall_loss += loss.item()
+        
+        loss.backward()
+        optimizer.step()
+    print(f"Epoch {epoch+1} complete!,  Average Loss: {overall_loss / (batch_idx*batch_size)}")    
+print("Finish!!")
 
     # save weights
     torch.save(model, f"{os.getcwd()}/trained_model.pt")
