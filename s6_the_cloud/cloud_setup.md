@@ -27,7 +27,7 @@ provider is the idea of near-infinite resources. Without the cloud it simply is 
 deep learning and machine learning tasks because they cannot be scaled locally.
 
 The image below shows a subset of [all the different services](https://cloud.google.com/products) that the Google cloud
-platform offers. The ones marked in red is the onces we are actually going to investigate in this course. Therefore, if
+platform offers. The ones marked in red are the ones we are actually going to investigate in this course. Therefore, if
 you get done with exercises early I highly recommend that you deep dive more into the Google cloud platform.
 
 <p align="center">
@@ -43,7 +43,7 @@ As the first step we are going to get you setup with some Google cloud credits.
 1. Go to <https://learn.inside.dtu.dk>. Go to this course. Find the recent message where there should be a download
    link and instructions on how to claim the $50 cloud credit. Please do not share the link anywhere as there are a
    limited amount of coupons. If you are not officially taking this course at DTU, Google gives $300 cloud credits
-   whenever you signup with a new account. NOTE that you need to provide an credit card for this so make
+   whenever you signup with a new account. NOTE that you need to provide a credit card for this so make
    sure to closely monitor your credit use so you do not end spending more than the free credit.
 
 2. Login to the homepage of gcp. It should look like this:
@@ -173,7 +173,8 @@ sometimes changes). We will in the exercises below try to increase it.
 
    1. Go to the `quotas page`
 
-   2. In the search field search for `GPUs (all region)`, such that you get the same quota as in the image
+   2. In the search field search for `GPUs (all regions)` (needs to match exactly, the search field is case sensitive),
+      such that you get the same quota as in the image.
 
    3. In the limit you can see what your current quota for the number of GPUs you can use are. Additional, to the
       right of the limit you can see the current usage. It is worth checking in on if you are ever in doubt if a job

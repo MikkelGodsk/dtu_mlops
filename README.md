@@ -75,7 +75,7 @@ Importantly we differ between core modules and optional modules. Core modules wi
 {: .important }
 > Core module
 
-at the top of their corresponding page. Core modules are importantly to go through to be able to pass the course.
+at the top of their corresponding page. Core modules are important to go through to be able to pass the course.
 You are highly recommended to still do the optional modules.
 
 ## MLOps: What is it?
@@ -87,7 +87,7 @@ and "operations" and covers everything that has to do with the management of the
 The lifecycle of production ML can largely be divided into three phases:
 
 1. Design: The initial phase starts with a investigation of the problem. Based on this analysis, a number of
-requirements can be prioritized of what we want our future model to actual do. Since machine learning requires
+requirements can be prioritized of what we want our future model to actually do. Since machine learning requires
 data to be trained, we also investigate in this step what data we have and if we need to source it in some other way.
 
 2. Model development: Based on the design phase we can actually begin to conjurer some machine learning algorithm to
